@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icofont/icofont.min.css">
+      <style>
+        
+        nav{
+            text-align: end;
+        }
+        nav span{
+            margin-right: 20px;
+        }
+        nav button{
+            background-color: blueviolet;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+            padding: 8px 10px;
+            font-weight: 700;
+        }
+        .overflow{
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            width: 400px;
+            height: 140px;
+            
+        }
+        main{
+            background-image: url(tatiana3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+             /* color: #fff;  */
+        } 
+        .g_image{
+            text-align: center;
+            margin-top: 80px;
+        }
+        .inp{
+            border: 1px solid lightgray;
+            width: fit-content;
+            margin: auto;
+            padding: 0 20px;
+            border-radius: 20px;
+            background-color: #fff;
+            position: relative;
+        }
+        .inp input{
+            width: 600px;
+            height: 40px;
+            border: none;
+            outline: none;
+           
+        }
+
+        .big-div{
+            display: flex;
+             flex-wrap: wrap; 
+             margin-right: auto;
+            margin-left: auto; 
+            justify-content: space-between;
+            /* margin-top: 20px; */
+             text-align: center;
+             width: 500px; 
+        }
+         .small-div{
+               width:100px ;
+                 height: 130px; 
+               text-align: center;
+             margin: 10px;
+             /* display: none; */
+             cursor: pointer;
+             border-radius: 5px;
+        }  
+        .small-div:hover{
+           display: block;
+           background-color: lightgray;
+          cursor: pointer;
+          color: blue;
+        }
+        .small-div img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            /* margin: 20px; */
+        }  
+         .icon{
+             text-align: end; 
+             visibility: hidden;
+             border-radius: 25px ;
+             padding: 8px 10px;
+             /* width: 20px ;  */ 
+             transition: all, 2s;
+             
+        }
+        .icon button{
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255,255,255,0.3); 
+        }
+        .small-div:hover .icon{
+            visibility: visible;
+             cursor: pointer;
+            
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            background-color: #fff; 
+            width: 100%; 
+            height: fit-content;
+            border: 1px solid lightgray;
+           left: -1px;
+            border-radius:0px 0px 20px 20px;
+            background-color: #fff;
+            border-top: none;
+        }
+        .dropdown p{
+            margin-left: 20px;
+        }
+        .inp:focus-within{
+             border-bottom: none;
+             border-radius: 20px 20px 0px 0px;
+        }
+        .inp:focus-within .dropdown{
+            display: block;
+        }
+         
+      </style>
+</head>
+<body>
+   <main>
+    <nav>
+        <span> Gmail </span>
+        <span>Images</span>
+        <span><i class="icofont-navigation-menu"></i></span>
+        <span><button>A</button></span>
+    </nav>
+    <div class="g_image">
+         <img src="Google-logo.png" alt="">
+    </div>
+    <div class="inp">
+        <i class="icofont-search-1"></i>
+      <input type="text" placeholder="Search Google or type URL" id="myShow">
+      <i class="icofont-mic"></i>
+       <div class="dropdown" id="myDrop">
+        
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>
+        <p>
+            <i class="icofont-history"></i>
+            <span>Recent Search</span>
+        </p>  
+      </div>
+    </div>
+    <div class="big-div">
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="Desktop--Model-S.jpg" alt="">
+
+            <p>Github</p>
+        </div>
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="tatiana2.jpg" alt="">
+            <p>Maddie</p>
+        </div>
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="tatiana.jpg" alt="">
+            <p>Tatiana</p>
+        </div>
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="tatiana1.jpg" alt="">
+            <p>Tate</p>
+        </div>
+
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="tatiana2.jpg" alt="">
+            <p>Noble</p>
+        </div>
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="tatiana3.jpg" alt="">
+            <p>Meddy</p>
+        </div>
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="index-phone (1).webp" alt="">
+            <p>Phone</p>
+        </div>
+        <div class="small-div">
+            <div class="icon" ><button>!</button></div> 
+            <img src="tatiana.jpg" alt="">
+            <p>Cilla</p>
+        </div>
+    </div> 
+   </main> 
+</body>
+</html>
+<script src="https://kit.fontawesome.com/b36364df0a.js" crossorigin="anonymous"></script>
+<script>
+    let arr = []
+</script>
